@@ -9,6 +9,7 @@
    - IssuerName, 
    - PublisherTBSHash, 
    - SHA1 and SHA256 hashes.
+   
    This tool extracts at least PublisherTBSHash and IssuerName from blocked file and logs into the event log that allows an automated publisher rule creation.
    A support case is open with Microsoft to submit a Design Change Request (DCR) for a permanent fix. No ETA.
    The intended audience of this tool are ACfB deployments in a dynamic environment where whitelisting operations continue even after ACfB is switched to an enforced mode.
