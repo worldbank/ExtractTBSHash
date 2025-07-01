@@ -14,11 +14,24 @@
    The supplied MSI installer takes care of creation of a scheduled task and of an event log source for its own output.
    Please download the latest version of installer from Release section and make sure it is signed by World Bank digital certificate. 
 
+### Contributions
+We are happy to receive feedback and/or contributions. Please feel free to report bugs or request new features by opening up a 
+[new issue](https://github.com/worldbank/ExtractTBSHash/issues).
+
+You are also welcome to fork this repo and submit a
+[pull request](https://github.com/worldbank/ExtractTBSHash/pulls)
+with contribution to the code.
+
+### Authors
+This package is written and published by Office of Information Security (OIS) part of World Bank Group's Information and Technology Solutions Vice Presidency (ITS).
+
+Contact:
+- sazari@worldbankgroup.org
+
 ### Release Notes
    - Requires  : PowerShell V5 on Windows 11 24H2 (Constrained Language Mode is fine) - it fails on older OS with PS v4.0
    - Distribution includes CreateSignerPolicy.ps1 script from Microsoft's ACfB Policy Design Wizard (Open Source). For this distributiion it has been digitally signed.
    - Version   : see $patchVer
-   - Contacts  : sazari@worldbankgroup.org
 
 ### LICENSE : MIT License
       Copyright (c) 2025 World Bank Group
