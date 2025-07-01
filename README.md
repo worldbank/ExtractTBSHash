@@ -11,8 +11,8 @@
 
 ## Usage Summary
    Script is intended to be executed from a scheduled task triggered by ACfB blocked file event ID, usually 3033.
-   The supplied MSI installer takes care of a creation of the scheduled task and event log source for its own output.
-   Please download lates version of installer from Release section and make sure it is signed by World Bank digital certificate. 
+   The supplied MSI installer takes care of creation of a scheduled task and of an event log source for its own output.
+   Please download the latest version of installer from Release section and make sure it is signed by World Bank digital certificate. 
 
 ### Release Notes
    - Requires  : PowerShell V5 on Windows 11 24H2 (Constrained Language Mode is fine) - it fails on older OS with PS v4.0
