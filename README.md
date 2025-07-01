@@ -1,4 +1,4 @@
-# ExtractTBSHash
+# ExtractTBSHash.ps1
    Patch for Microsoft's design deficiency of not logging PublisherTBSHash if ACFB policy is enfoiced.
 
 ## Description
@@ -6,14 +6,15 @@
    security control by Microsoft. When ACfB policy is enforced, it does not log neither of the following file
    attributes necessary for a scalable ACfB policy rule creation:
    PublisherName, IssuerName, PublisherTBSHash, SHA1 and SHA256 hashes.
-   This tool extracts at least PublisherTBSHash and IssuerName from the blocked file and logs into the event log that allows an automated publisher rule creation.
+   This tool extracts at least PublisherTBSHash and IssuerName from blocked file and logs into the event log that allows an automated publisher rule creation.
+   A support case is open with Microsoft to submit a Design Change Request (DCR) for a permanent fix. No ETA.
 
-## Usage Summary:
+## Usage Summary
    Script is intended to be executed from a scheduled task triggered by ACfB blocked file event ID, usually 3033.
    The supplied MSI installer takes care of a creation of the scheduled task and event log source for its own output.
    Please download lates version of installer from Release section and make sure it is signed by World Bank digital certificate. 
 
-### Notes
+### Release Notes
    - Requires  : PowerShell V5 on Windows 11 24H2 (Constrained Language Mode is fine) - it fails on older OS with PS v4.0
    - Version   : see $patchVer
    - Contacts  : sazari@worldbankgroup.org
