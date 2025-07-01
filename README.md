@@ -5,9 +5,13 @@
    ExtractTBSHash is a tool that fixes a design deficiency of an Application Control for Business (former WDAC)
    security control by Microsoft. When ACfB policy is enforced, it does not log neither of the following file
    attributes necessary for a scalable ACfB policy rule creation:
-   PublisherName, IssuerName, PublisherTBSHash, SHA1 and SHA256 hashes.
+   - PublisherName, 
+   - IssuerName, 
+   - PublisherTBSHash, 
+   - SHA1 and SHA256 hashes.
    This tool extracts at least PublisherTBSHash and IssuerName from blocked file and logs into the event log that allows an automated publisher rule creation.
    A support case is open with Microsoft to submit a Design Change Request (DCR) for a permanent fix. No ETA.
+   The intended audience of this tool are ACfB deployments in a dynamic environment where whitelisting operations continue even after ACfB is switched to an enforced mode.
 
 ## Usage Summary
    Script is intended to be executed from a scheduled task triggered by ACfB blocked file event ID, usually 3033.
