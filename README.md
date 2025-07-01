@@ -9,15 +9,15 @@
    - IssuerName, 
    - PublisherTBSHash, 
    - SHA1 and SHA256 hashes.
-   
+
    This tool extracts at least PublisherTBSHash and IssuerName from blocked file and logs into the event log that allows an automated publisher rule creation.
    A support case is open with Microsoft to submit a Design Change Request (DCR) for a permanent fix. No ETA.
    The intended audience of this tool are ACfB deployments in a dynamic environment where whitelisting operations continue even after ACfB is switched to an enforced mode.
 
 ## Usage Summary
-   Script is intended to be executed from a scheduled task triggered by ACfB blocked file event ID, usually 3033.
-   The supplied MSI installer takes care of creation of a scheduled task and of an event log source for its own output.
-   Please download the latest version of installer from Release section and make sure it is signed by World Bank digital certificate. 
+Script is intended to be executed from a scheduled task triggered by ACfB blocked file event ID, usually 3033. The supplied MSI installer takes care of creation of a scheduled task and of an event log source for its own output. Please download the latest version of an installer from 
+[Releases](https://github.com/worldbank/ExtractTBSHash/releases)
+ section and make sure it is signed by a publicly trusted World Bank digital signature. 
 
 ### Contributions
 We are happy to receive feedback and/or contributions. Please feel free to report bugs or request new features by opening up a 
