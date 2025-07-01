@@ -16,6 +16,7 @@
 
 ### Release Notes
    - Requires  : PowerShell V5 on Windows 11 24H2 (Constrained Language Mode is fine) - it fails on older OS with PS v4.0
+   - Distribution includes CreateSignerPolicy.ps1 script from Microsoft's ACfB Policy Design Wizard (Open Source). For this distributiion it has been digitally signed.
    - Version   : see $patchVer
    - Contacts  : sazari@worldbankgroup.org
 
